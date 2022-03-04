@@ -1,0 +1,28 @@
+{
+	"name": "sentry-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "ts-node src/Bot.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/pongpanott/sentry-bot.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/pongpanott/sentry-bot/issues"
+	},
+	"homepage": "https://github.com/pongpanott/sentry-bot#readme",
+	"dependencies": {
+		"discord.js": "^13.6.0",
+		"dotenv": "^16.0.0"
+	},
+	"devDependencies": {
+		"@types/node": "^17.0.21",
+		"ts-node": "^10.6.0",
+		"typescript": "^4.6.2"
+	}
+}
