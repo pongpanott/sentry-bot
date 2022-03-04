@@ -1,1 +1,2 @@
-web: node dist/Bot.js
+web: node dist/index.js
+worker: node dist/index.js

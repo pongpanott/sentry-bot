@@ -2,9 +2,9 @@
 	"name": "sentry-bot",
 	"version": "1.0.0",
 	"description": "",
-	"main": "Bot.js",
+	"main": "index.js",
 	"scripts": {
-		"start": "node dist/Bot.js",
+		"start": "node dist/index.js",
 		"build": "tsc",
 		"postinstall": "npm run build",
 		"deploy": "git add . && git commit -m Heroku && git push heroku master"
