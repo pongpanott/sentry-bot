@@ -1,5 +1,6 @@
 import { Client, Intents } from 'discord.js';
 import * as dotenv from 'dotenv';
+import googleSearch from './listeners/googleSearch';
 import hello from './listeners/hello';
 import interactionCreate from './listeners/interactionCreate';
 import ready from './listeners/ready';
@@ -15,5 +16,6 @@ const client = new Client({
 ready(client);
 interactionCreate(client);
 hello(client);
+googleSearch(client);
 
 client.login(token);
