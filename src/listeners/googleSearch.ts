@@ -10,7 +10,11 @@ export default (client: Client): void => {
     const userMessage = messageCreate.content;
 
     const userCommand = userMessage.substring(0, userMessage.indexOf(' '));
-    const query = userMessage.substring(userMessage.indexOf(' ') + 1);
+    const query = encodeURI(
+      userMessage.substring(userMessage.indexOf(' ') + 1),
+    );
+
+    console.log('query', query);
 
     if (userCommand === '!google') {
       const config: AxiosRequestConfig = {
